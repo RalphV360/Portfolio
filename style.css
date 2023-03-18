@@ -1,0 +1,207 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color for the body */
+body {
+  background-color: #f8f8f8;
+}
+
+/* Set a default font family and size */
+body,
+input,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Set a max width for the page */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+
+/* Set a background color for the header */
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+/* Set a font size for the header */
+header h1 {
+  font-size: 36px;
+}
+
+/* Set the background color of the header */
+.custom-bg {
+  background-color: #a020f0;
+}
+
+/* Navigation Styles */
+
+/* Set a background color for the navigation */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex; /* Make the navigation items flex */
+  justify-content: space-between; /* Distribute items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 10px;
+}
+/* Left Align Navigation Brand */
+nav .navbar-brand {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+/* Remove default list styling for navbar-nav */
+nav .navbar-nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* Style links in the navigation */
+nav a {
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: #fff !important;
+  text-decoration: none;
+  background-color: #a020f0;
+}
+/* Add a logo to the left of the navigation */
+nav .logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+/* Move the navigation items to the right */
+nav ul {
+  margin-right: 50px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Main Content Styles */
+
+/* Set a padding for the main content area */
+main {
+  padding: 50px 0;
+}
+
+/* Set a background color for the main content area */
+section {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+
+/* Set a max width for the content area */
+.container {
+  max-width: 1500px;
+}
+
+/* Style headings */
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Style cards */
+.card {
+  border: none;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+/* Style contact form */
+form {
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"],
+button[type="submit"] {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #a020f0;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  color: #fff;
+  background-color: #6403a0;
+}
+
+input[type="submit"]:active,
+button[type="submit"]:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: #6403a0 !important;
+}
+
+/* Footer Styles */
+
+/* Set a background color for the footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* Set a font size for the footer */
+footer p {
+  font-size: 14px;
+}
+
+/* Style social media icons in the footer */
+footer ul li {
+  margin-right: 20px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+/* Style Font Awesome icons */
+.fa {
+  font-size: 24px;
+}
