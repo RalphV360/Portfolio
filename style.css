@@ -63,7 +63,7 @@ nav a {
   color: #fff !important;
   display: block;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 nav a.active,
