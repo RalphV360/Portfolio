@@ -106,21 +106,17 @@ nav ul li {
   color: #fff;
 }
 
-/* Responsive Styles */
+/* Responsive Styles for navbar*/
 
-/* Center the brand name in the center of the navbar for small screens */
-@media (max-width: 768px) {
-  nav .navbar-brand {
-    display: block;
-    text-align: center;
-  }
+/* Adjust margin for navbar-nav for small screens */
+@media (max-width: 991.98px) {
   nav .navbar-nav {
-    margin: auto;
+    margin: 0;
   }
 }
 
-/* Adjust padding for navbar links for small screens */
-@media (max-width: 575px) {
+/* Adjust padding for navbar links for medium screens */
+@media (max-width: 767.98px) {
   nav a {
     padding: 5px;
     font-size: 14px;
@@ -128,9 +124,9 @@ nav ul li {
 }
 
 /* Make the hamburger icon larger for small screens */
-@media (max-width: 576px) {
+@media (max-width: 576.98px) {
   .navbar-toggler-icon {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -238,6 +234,76 @@ h2 {
 
 .carousel-indicators .active {
   background-color: #444;
+}
+
+/* Responsive Styles for carousel */
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: calc(100vh - 56px);
+  }
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .carousel-caption,
+  .custom-caption {
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+  }
+  .carousel-caption h5,
+  .custom-caption h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .carousel-caption p,
+  .custom-caption p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    z-index: 1;
+  }
+  .carousel-item {
+    height: calc(73vh - 400px);
+  }
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .carousel-caption,
+  .custom-caption {
+    position: static !important;
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+    margin: auto;
+  }
+  .carousel-caption h5,
+  .custom-caption h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .carousel-caption p,
+  .custom-caption p {
+    font-size: 0.8rem;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 30px;
+    width: 30px;
+  }
+  .carousel-control-prev-icon.bg-dark:before,
+  .carousel-control-next-icon.bg-dark:before {
+    font-size: 0.8rem;
+  }
 }
 
 /* Style contact form */
