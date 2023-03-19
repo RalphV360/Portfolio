@@ -40,29 +40,19 @@ header h1 {
 }
 
 /* Set the background color of the header */
-.custom-bg {
-  background-color: #a020f0;
+header.custom-bg {
+  background-color: #a020f0 !important;
 }
 
 /* Navigation Styles */
 
-/* Set a background color for the navigation */
-nav {
-  background-color: #333;
-  color: #fff;
-  display: flex; /* Make the navigation items flex */
-  justify-content: space-between; /* Distribute items horizontally */
-  align-items: center; /* Center items vertically */
-  padding: 10px;
-}
-/* Left Align Navigation Brand */
-nav .navbar-brand {
-  margin-right: auto !important;
-  margin-left: 0 !important;
+/* Set the background color of the nav bar */
+nav.custom-bg2 {
+  background-color: #333 !important;
 }
 
 /* Remove default list styling for navbar-nav */
-nav .navbar-nav {
+nav.navbar-nav {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -70,30 +60,37 @@ nav .navbar-nav {
 
 /* Style links in the navigation */
 nav a {
-  color: #fff;
-  padding: 10px;
-  display: inline-block;
-}
-
-nav a:hover {
   color: #fff !important;
-  text-decoration: none;
-  background-color: #a020f0;
-}
-/* Add a logo to the left of the navigation */
-nav .logo {
-  font-size: 28px;
-  font-weight: bold;
-  margin-left: 20px;
-}
-/* Move the navigation items to the right */
-nav ul {
-  margin-right: 50px;
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
 }
 
+nav a.active,
+nav a:hover {
+  color: #000 !important;
+  text-decoration: none;
+  background-color: #ffc545;
+}
+
+/* Move the navigation items to the center */
+nav .navbar-nav {
+  margin: auto;
+}
+
+/* Add spacing to the navbar */
 nav ul li {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+/* Add custom hamburger icon */
+.navbar-toggler:focus span {
+  color: #60baae;
+}
+
+.navbar-toggler-icon {
+  font-size: 30px;
 }
 
 /* Main Content Styles */
@@ -202,6 +199,16 @@ footer ul li:last-child {
 }
 
 /* Style Font Awesome icons */
-.fa {
-  font-size: 24px;
+.fab {
+  color: #fff;
+  font-size: 40px;
+}
+
+#btn-back-to-top {
+  background-color: #6403a0;
+  border-color: #000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
 }
