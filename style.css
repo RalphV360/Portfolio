@@ -29,7 +29,7 @@ textarea {
 
 /* Set a background color for the header */
 header {
-  background-color: #fff;
+  background-color: #a020f0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
 }
@@ -37,18 +37,30 @@ header {
 /* Set a font size for the header */
 header h1 {
   font-size: 36px;
+  color: #fff;
 }
 
-/* Set the background color of the header */
-header.custom-bg {
-  background-color: #a020f0 !important;
+/* Set the color of the text in the header */
+header p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Style the "Learn More" button */
+header a.btn {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 /* Navigation Styles */
 
 /* Set the background color of the nav bar */
 nav.custom-bg2 {
-  background-color: #333 !important;
+  background-color: #333;
 }
 
 /* Remove default list styling for navbar-nav */
@@ -91,6 +103,35 @@ nav ul li {
 
 .navbar-toggler-icon {
   font-size: 30px;
+  color: #fff;
+}
+
+/* Responsive Styles */
+
+/* Center the brand name in the center of the navbar for small screens */
+@media (max-width: 768px) {
+  nav .navbar-brand {
+    display: block;
+    text-align: center;
+  }
+  nav .navbar-nav {
+    margin: auto;
+  }
+}
+
+/* Adjust padding for navbar links for small screens */
+@media (max-width: 575px) {
+  nav a {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+
+/* Make the hamburger icon larger for small screens */
+@media (max-width: 576px) {
+  .navbar-toggler-icon {
+    font-size: 40px;
+  }
 }
 
 /* Main Content Styles */
@@ -113,6 +154,11 @@ section {
   max-width: 1500px;
 }
 
+/* .custom-text {
+  padding-left: 400px;
+  padding-right: 400px;
+} */
+
 /* Style headings */
 h2 {
   font-size: 28px;
@@ -131,6 +177,67 @@ h2 {
 
 .card-body {
   padding: 30px;
+}
+
+/* Carousel Styling */
+
+.carousel-item {
+  height: 800px;
+}
+
+.carousel-caption {
+  color: #000;
+}
+
+.custom-caption {
+  color: #fff;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 800px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 60px;
+  width: 60px;
+}
+
+/* .carousel-control-prev-icon:before {
+  content: "\2039";
+  font-size: 2rem;
+}
+
+.carousel-control-next-icon:before {
+  content: "\203a";
+  font-size: 2rem;
+} */
+
+.carousel-control-prev-icon.bg-dark:before,
+.carousel-control-next-icon.bg-dark:before {
+  color: #000;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -20px;
+}
+
+.carousel-control-next-icon {
+  margin-right: -20px;
+}
+
+.carousel-indicators li {
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: #444;
 }
 
 /* Style contact form */
@@ -206,9 +313,10 @@ footer ul li:last-child {
 
 #btn-back-to-top {
   background-color: #6403a0;
-  border-color: #000;
+  border-color: #6403a0;
   position: fixed;
   bottom: 20px;
   right: 20px;
   display: none;
+  border-radius: 100px;
 }
